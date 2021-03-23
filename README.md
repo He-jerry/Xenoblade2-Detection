@@ -9,6 +9,5 @@ The samples of nopon is shown in below:
 ![image](https://github.com/He-jerry/Xenoblade2-Detection/raw/main/teaser/nopong%20sample.jpg?raw=true)
 
 
-
 Current Network backbone:
-**Yolov3**(Redmon, Joseph and Ali Farhadi. “YOLOv3: An Incremental Improvement.” ArXiv abs/1804.02767 (2018): n. pag.)
+Yolov3(Redmon, Joseph and Ali Farhadi. “YOLOv3: An Incremental Improvement.” ArXiv abs/1804.02767 (2018): n. pag.)
