@@ -1,0 +1,36 @@
+MODEL:
+  TYPE: 'RetinaNet'
+  CONV_BODY: 'ResNet50_FPN'
+  NUM_CLASSES: 2
+RETINANET:
+  RETINANET_ON: True
+  LOSS_ALPHA: 0.25
+  LOSS_GAMMA: 2.0
+  NUM_CONVS: 4
+  ASPECT_RATIOS: (0.5, 1, 2.0)
+  ANCHOR_SCALE: 4
+  SCALE_RATIOS: (1.0, 1.2599210498948732, 1.5874010519681994)
+  PRIOR_PROB: 0.01
+SOLVER:
+  BASE_LR: 0.001
+  OPTIMIZER: 'sgd'
+  MOMENTUM: 0.9
+  MAX_ITER: 300
+  WEIGHT_DECAY: 0.0001
+TRAIN:
+  WEIGHTS: 'init.pth'
+  DATASETS: ('train.txt')
+  DATASETS_DIR: '/home/mia_dev/xeroblade2/dataset/train/voc/'
+  SAVE_CHECKPOINTS_EPOCHS: 10
+  MAX_EPOCHS: 150
+  BATCH_SIZE: 1
+  SCALES: (600,600)
+  AUTO_RESUME: False
+  RESUME_FILE: 'init.pth'
+TEST:
+  WEIGHTS: '/home/mia_dev/xeroblade2/RetinaNet-Pytorch-master/checkpoint/ckpt_290.pth'
+  DATASETS: ('valid.txt')
+  DATASETS_DIR: '/home/mia_dev/xeroblade2/dataset/train/voc/'
+  SCALES: (600,600)
+  OUTPUT_DIR: './result/'
+
