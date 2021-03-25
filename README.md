@@ -10,4 +10,7 @@ The samples of nopon is shown in below:
 
 
 Current Network backbone:
+
 Yolov3(Redmon, Joseph and Ali Farhadi. “YOLOv3: An Incremental Improvement.” ArXiv abs/1804.02767 (2018): n. pag.)
+
+RetinaNet(Lin, Tsung-Yi et al. “Focal Loss for Dense Object Detection.” IEEE Transactions on Pattern Analysis and Machine Intelligence 42 (2020): 318-327.)
